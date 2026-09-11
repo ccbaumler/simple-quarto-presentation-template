@@ -1,27 +1,57 @@
 ---
-title: "Quarto Presentation Template"
+title: "My Quarto Presentation Template"
 subtitle: "Modern slides with code, diagrams, and math"
-author: "Your Name"
-date: today
-date-format: "MMMM D, YYYY"
+author: 
+  - name: Colton Baumler
+    orcid: 0000-0002-5926-7792
+    email: ccbaumler@ucdavis.edu
+    affiliations: University of California, Davis
+date: last-modified
+date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
 format:
   revealjs:
-    theme: [default, custom.scss]
+    theme: [custom-light.scss]
     logo: "fig/logo.svg"
-    footer: "Quarto Presentation Template"
+    footer: "Data Intensive Biology Lab"
+    chalkboard: 
+      buttons: false
     transition: fade
     transition-speed: fast
     slide-number: c/t
-    preview-links: auto
+    preview-links: false
     code-fold: false
-    incremental: false
-    highlight-style: github-dark
+    incremental: true
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: true
+    auto-animate-duration: 0.8
+    menu:
+      side: left
+      width: half
+    highlight-style: github-light
     title-slide-attributes:
-      data-background-gradient: "linear-gradient(135deg, #1e40af 0%, #0f172a 100%)"
-editor: visual
+      data-background-gradient: "radial-gradient(at 87% 87%, #eb4775 0px, transparent 50%),
+                                radial-gradient(at 6%  99%, #eb6b47 0px, transparent 50%),
+                                radial-gradient(at 76% 4%,  #ebbd47 0px, transparent 50%),
+                                radial-gradient(at 35% 44%, #47ebbd 0px, transparent 50%),
+                                radial-gradient(at 86% 45%, #4775eb 0px, transparent 50%)" 
+from: markdown+emoji
+resources:
+  - fig/
 ---
 
 ## Features
+
+:::{.notes}
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+https://jamesgoldie.dev/writing/stack-gradients-in-r/
+https://www.whocanuse.com
+
+:::
 
 This template includes everything you need for technical presentations:
 
@@ -99,10 +129,12 @@ $$
 
 ## Two Columns
 
+### Multi-column
+
 :::: {.columns}
 
 ::: {.column width="50%"}
-### Benefits
+#### Benefits
 
 - Side-by-side comparisons
 - Text alongside visuals
@@ -111,7 +143,7 @@ $$
 :::
 
 ::: {.column width="50%"}
-### Metrics
+#### Metrics
 
 | Metric | Value |
 |--------|------:|
