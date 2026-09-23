@@ -45,6 +45,7 @@ quarto install tinytex
 | `make devel` | Live preview at localhost |
 | `make deploy` | Publish to GitHub Pages |
 | `make pdf` | Export as PDF |
+| `make renv-init` | Initialize a renv ecosystem |
 
 ## Structure
 
